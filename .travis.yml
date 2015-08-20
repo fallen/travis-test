@@ -1,0 +1,14 @@
+language: python
+python:
+  - '3.4'
+sudo: false
+install:
+  - run_forever.sh
+after_success:
+  - bash -c 'echo success!'
+notifications:
+  email:
+    recipients:
+      - yann@sionneau.net
+    on_success: always
+    on_failure: always
