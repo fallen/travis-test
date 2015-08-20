@@ -3,7 +3,7 @@ python:
   - '3.4'
 sudo: false
 install:
-  - run_forever.sh
+  - . ./run_forever.sh
 after_success:
   - bash -c 'echo success!'
 notifications:
